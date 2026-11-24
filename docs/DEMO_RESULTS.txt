@@ -1,0 +1,36 @@
+
+> simulador-salarial-local@0.2.0 demo
+> node examples/demo.mjs
+
+DEMONSTRAÇÃO FICTÍCIA — NÃO UTILIZAR PARA PROCESSAMENTO REAL.
+{
+  "status": "Calculada",
+  "month": "2026-02",
+  "attendance": {
+    "planned": 9600,
+    "worked": 9600,
+    "unpaid": 0,
+    "paidAbsence": 0,
+    "overtime": 0,
+    "unclassified": 0,
+    "remaining": 0,
+    "sundays": 0,
+    "holidayDays": 0,
+    "mealDays": 20,
+    "annualOvertimeAfter": 0,
+    "compensatoryHalfMinutes": 0,
+    "compensatoryMinutes": 0
+  },
+  "totals": {
+    "knownBankGrossCents": 100000,
+    "knownCardCents": 12000,
+    "knownSSBaseCents": 100000,
+    "knownIRSBaseCents": 100000,
+    "ssCents": 11000,
+    "irsCents": 3000,
+    "otherDeductionsCents": 0,
+    "bankNetCents": 86000,
+    "knownTransferCents": 0,
+    "unassignedCents": 0
+  }
+}

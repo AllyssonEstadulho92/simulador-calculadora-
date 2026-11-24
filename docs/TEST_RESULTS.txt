@@ -1,0 +1,254 @@
+
+> simulador-salarial-local@0.2.0 test
+> node --test
+
+TAP version 13
+# Subtest: Fórmula legal e arredondamento exato
+ok 1 - Fórmula legal e arredondamento exato
+  ---
+  duration_ms: 2.023533
+  type: 'test'
+  ...
+# Subtest: Rejeita dinheiro fracionário ou negativo
+ok 2 - Rejeita dinheiro fracionário ou negativo
+  ---
+  duration_ms: 0.301405
+  type: 'test'
+  ...
+# Subtest: Fevereiro, bissexto e meses de 30/31 dias
+ok 3 - Fevereiro, bissexto e meses de 30/31 dias
+  ---
+  duration_ms: 0.784874
+  type: 'test'
+  ...
+# Subtest: Feriados nacionais e móveis 2026
+ok 4 - Feriados nacionais e móveis 2026
+  ---
+  duration_ms: 0.293433
+  type: 'test'
+  ...
+# Subtest: Feriado municipal explícito
+ok 5 - Feriado municipal explícito
+  ---
+  duration_ms: 0.2322
+  type: 'test'
+  ...
+# Subtest: Pausas pagas não reduzem minutos remunerados
+ok 6 - Pausas pagas não reduzem minutos remunerados
+  ---
+  duration_ms: 0.698514
+  type: 'test'
+  ...
+# Subtest: Turno atravessa meia-noite com pausa
+ok 7 - Turno atravessa meia-noite com pausa
+  ---
+  duration_ms: 0.154593
+  type: 'test'
+  ...
+# Subtest: Pausa atravessa meia-noite
+ok 8 - Pausa atravessa meia-noite
+  ---
+  duration_ms: 0.093902
+  type: 'test'
+  ...
+# Subtest: Rejeita sobreposição e saída inválida
+ok 9 - Rejeita sobreposição e saída inválida
+  ---
+  duration_ms: 0.35102
+  type: 'test'
+  ...
+# Subtest: Salário fixo igual em meses com diferentes dias úteis
+ok 10 - Salário fixo igual em meses com diferentes dias úteis
+  ---
+  duration_ms: 4.555433
+  type: 'test'
+  ...
+# Subtest: Cartão não é somado ao banco
+ok 11 - Cartão não é somado ao banco
+  ---
+  duration_ms: 0.774639
+  type: 'test'
+  ...
+# Subtest: Alimentação em dinheiro é somada ao banco
+ok 12 - Alimentação em dinheiro é somada ao banco
+  ---
+  duration_ms: 0.690021
+  type: 'test'
+  ...
+# Subtest: Bases de alimentação IRS e SS independentes
+ok 13 - Bases de alimentação IRS e SS independentes
+  ---
+  duration_ms: 0.735961
+  type: 'test'
+  ...
+# Subtest: Domingo normal só adiciona majoração
+ok 14 - Domingo normal só adiciona majoração
+  ---
+  duration_ms: 0.859156
+  type: 'test'
+  ...
+# Subtest: Domingo sem confirmação não assume 50%
+ok 15 - Domingo sem confirmação não assume 50%
+  ---
+  duration_ms: 0.796482
+  type: 'test'
+  ...
+# Subtest: Feriado normal com majoração sem duplicar base
+ok 16 - Feriado normal com majoração sem duplicar base
+  ---
+  duration_ms: 1.128432
+  type: 'test'
+  ...
+# Subtest: Feriado com descanso compensatório
+ok 17 - Feriado com descanso compensatório
+  ---
+  duration_ms: 1.187582
+  type: 'test'
+  ...
+# Subtest: Feriado ao domingo sem acumulação confirmada bloqueia
+ok 18 - Feriado ao domingo sem acumulação confirmada bloqueia
+  ---
+  duration_ms: 0.831044
+  type: 'test'
+  ...
+# Subtest: Suplementar primeira e segunda hora
+ok 19 - Suplementar primeira e segunda hora
+  ---
+  duration_ms: 0.190527
+  type: 'test'
+  ...
+# Subtest: Suplementar atravessa patamar anual de 100h
+ok 20 - Suplementar atravessa patamar anual de 100h
+  ---
+  duration_ms: 0.124698
+  type: 'test'
+  ...
+# Subtest: Suplementar em descanso e feriado
+ok 21 - Suplementar em descanso e feriado
+  ---
+  duration_ms: 0.073551
+  type: 'test'
+  ...
+# Subtest: Suplementar sem IRS autónomo não produz líquido
+ok 22 - Suplementar sem IRS autónomo não produz líquido
+  ---
+  duration_ms: 0.771474
+  type: 'test'
+  ...
+# Subtest: Ausência parcial não remunerada
+ok 23 - Ausência parcial não remunerada
+  ---
+  duration_ms: 0.734829
+  type: 'test'
+  ...
+# Subtest: Férias mantêm vencimento base
+ok 24 - Férias mantêm vencimento base
+  ---
+  duration_ms: 0.884755
+  type: 'test'
+  ...
+# Subtest: Baixa classificada sem prestação social no salário
+ok 25 - Baixa classificada sem prestação social no salário
+  ---
+  duration_ms: 1.181613
+  type: 'test'
+  ...
+# Subtest: Não desconta ausência por classificar
+ok 26 - Não desconta ausência por classificar
+  ---
+  duration_ms: 0.770463
+  type: 'test'
+  ...
+# Subtest: Fecho por rubrica: valor bruto transita sem duplicar
+ok 27 - Fecho por rubrica: valor bruto transita sem duplicar
+  ---
+  duration_ms: 0.804664
+  type: 'test'
+  ...
+# Subtest: Fecho não confirmado bloqueia líquido
+ok 28 - Fecho não confirmado bloqueia líquido
+  ---
+  duration_ms: 1.256966
+  type: 'test'
+  ...
+# Subtest: Dias e rubricas duplicados são rejeitados
+ok 29 - Dias e rubricas duplicados são rejeitados
+  ---
+  duration_ms: 1.213391
+  type: 'test'
+  ...
+# Subtest: IRS escalão, abatimento, dependente e piso euro
+ok 30 - IRS escalão, abatimento, dependente e piso euro
+  ---
+  duration_ms: 0.547907
+  type: 'test'
+  ...
+# Subtest: Novembro e dezembro de 2026 sem ajuste fiscal bloqueiam líquido
+ok 31 - Novembro e dezembro de 2026 sem ajuste fiscal bloqueiam líquido
+  ---
+  duration_ms: 1.57054
+  type: 'test'
+  ...
+# Subtest: Perfil incompleto, datas e regras expiradas
+ok 32 - Perfil incompleto, datas e regras expiradas
+  ---
+  duration_ms: 1.232971
+  type: 'test'
+  ...
+# Subtest: Subsídio extraordinário não é salário base nem IRS ordinário
+ok 33 - Subsídio extraordinário não é salário base nem IRS ordinário
+  ---
+  duration_ms: 0.595028
+  type: 'test'
+  ...
+# Subtest: Dia em falta não é convertido em folga
+ok 34 - Dia em falta não é convertido em folga
+  ---
+  duration_ms: 0.904795
+  type: 'test'
+  ...
+# Subtest: Repetibilidade e nenhuma mutação de dados
+ok 35 - Repetibilidade e nenhuma mutação de dados
+  ---
+  duration_ms: 1.414304
+  type: 'test'
+  ...
+# Subtest: Arredondamento por calibrar produz estimativa
+ok 36 - Arredondamento por calibrar produz estimativa
+  ---
+  duration_ms: 0.666296
+  type: 'test'
+  ...
+# Subtest: Transitados anteriores não integrados bloqueiam líquido
+ok 37 - Transitados anteriores não integrados bloqueiam líquido
+  ---
+  duration_ms: 0.611723
+  type: 'test'
+  ...
+# Subtest: Ano futuro não é apresentado como legislação validada
+ok 38 - Ano futuro não é apresentado como legislação validada
+  ---
+  duration_ms: 0.452263
+  type: 'test'
+  ...
+# Subtest: Férias nunca descontadas automaticamente por classificação contraditória
+ok 39 - Férias nunca descontadas automaticamente por classificação contraditória
+  ---
+  duration_ms: 0.608088
+  type: 'test'
+  ...
+# Subtest: Cenário isolado de aumento salarial
+ok 40 - Cenário isolado de aumento salarial
+  ---
+  duration_ms: 1.962571
+  type: 'test'
+  ...
+1..40
+# tests 40
+# suites 0
+# pass 40
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 122.70251
